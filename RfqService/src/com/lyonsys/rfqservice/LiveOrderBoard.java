@@ -1,4 +1,4 @@
-package com.lyonsys.cstest.mandrill;
+package com.lyonsys.rfqservice;
 
 import java.util.List;
 

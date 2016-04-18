@@ -1,4 +1,4 @@
-package com.lyonsys.cstest.mandrill;
+package com.lyonsys.rfqservice;
 
 /**
  * Created by yong on 16/04/2016.

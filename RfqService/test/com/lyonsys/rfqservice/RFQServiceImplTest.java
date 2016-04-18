@@ -1,6 +1,5 @@
-package com.lyonsys.cstest.mandrill;
+package com.lyonsys.rfqservice;
 
-import com.lyonsys.cstest.mandrill.*;
 import org.junit.Before;
 import org.junit.Test;
 
