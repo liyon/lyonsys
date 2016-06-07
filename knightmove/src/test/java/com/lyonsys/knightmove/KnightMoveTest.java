@@ -47,8 +47,7 @@ public class KnightMoveTest {
         knightMove = new KnightMove(keyBoard , 16);
         assertEquals(1195650888, knightMove.getNumberOfRoutes());
 
-        knightMove = new KnightMove(keyBoard , 32);
-        //assertEquals(1195650888, knightMove.getNumberOfRoutes());
+        //knightMove = new KnightMove(keyBoard , 32);
     }
 
 }
