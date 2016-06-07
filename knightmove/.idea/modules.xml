@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/knightmove.iml" filepath="$PROJECT_DIR$/.idea/modules/knightmove.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/knightmove_main.iml" filepath="$PROJECT_DIR$/.idea/modules/knightmove_main.iml" group="knightmove" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/knightmove_test.iml" filepath="$PROJECT_DIR$/.idea/modules/knightmove_test.iml" group="knightmove" />
+    </modules>
+  </component>
+</project>
