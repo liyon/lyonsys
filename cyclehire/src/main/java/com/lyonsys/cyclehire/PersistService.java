@@ -61,6 +61,12 @@ public class PersistService implements Runnable {
 
     public void stop()
     {
+        try{
+            fileWriter.close();
+        }catch (IOException e)
+        {
+
+        }
         executorService.shutdown();
         this.stop = true;
     }

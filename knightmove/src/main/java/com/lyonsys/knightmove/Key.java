@@ -29,9 +29,6 @@ public class Key {
         this.y = y;
     }
 
-    public char getKeyChar() {
-        return keyChar;
-    }
 
     public int getX() {
         return x;

@@ -3,6 +3,7 @@ package com.lyonsys.knightmove;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.function.Predicate;
 
 /**
  * Created by yong on 02/06/2016.
@@ -16,12 +17,12 @@ public class KnightMove {
         this.keyBoard = keyBoard;
         this.steps = numberOfSequence;
         //Only need build valid knight move for each key once.
-         keyBoard.stream().forEach(p -> p.setNextMove(getValidKnightMove(p)));
+        keyBoard.stream().forEach(p -> p.setNextMove(getValidKnightMove(p)));
     }
 
     public long getNumberOfRoutes() {
         AtomicLong numberOfRoutes = new AtomicLong();
-        keyBoard.stream().parallel().forEach(p->
+        keyBoard.stream().parallel().forEach(p ->
         {
             this.traverse(new Path(p, null), numberOfRoutes);
         });
@@ -62,16 +63,17 @@ public class KnightMove {
         if (path.getNumberOfVowels() > 2) {
             return;
         }
-        if (path.getLevel() == steps -1) {
+        if (path.getLevel() == steps ) {
             numberOfPaths.incrementAndGet();
             return;
         }
         //Arrays.stream(path.getKey().getNextMove()).forEach(p->
-        for (Key p: path.getKey().getNextMove())
-        {
+        for (Key p : path.getKey().getNextMove()) {
             Path nextPath = new Path(p, path);
             traverse(nextPath, numberOfPaths);
-        };
+        }
+        ;
     }
+
 }
 

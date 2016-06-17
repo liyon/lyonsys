@@ -41,4 +41,8 @@ public class User {
         this.name = name;
         this.balance = new AtomicReference<>(BigDecimal.ZERO);
     }
+
+    public String getName() {
+        return name;
+    }
 }

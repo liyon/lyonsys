@@ -13,7 +13,7 @@ public class Path {
         this.key = key;
         int vowelNumber = this.key.isUpperCaseVowel() ? 1 : 0;
         if (parent == null) {
-            this.level = 0;
+            this.level = 1;
             this.numberOfVowels = vowelNumber;
         } else {
             this.level = parent.getLevel() + 1;

@@ -69,11 +69,11 @@ public class Journey {
 
     @Override
     public String toString() {
+        String endName = end == null? "": end.getName();
         return "Journey{" +
-                "user=" + user +
-                ", cycle=" + cycle +
-                ", start=" + start +
-                ", end=" + end +
+                "user=" + user.getName() +
+                ", start=" + start.getName() +
+                ", end=" +endName +
                 ", startTime=" + startTime +
                 ", finishTime=" + finishTime +
                 '}';
