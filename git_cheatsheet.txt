@@ -6,3 +6,6 @@ git branch -u <remote_branch>
 
 git rebase -i HEAD~2
 - rebase current branch/rewrite history in interactive mode for the last 2 comit
+
+git merge --squash <branch>
+ -- merge the change in the branch but discard the commit history of that branch
