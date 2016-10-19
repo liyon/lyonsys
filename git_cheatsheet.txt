@@ -9,3 +9,16 @@ git rebase -i HEAD~2
 
 git merge --squash <branch>
  -- merge the change in the branch but discard the commit history of that branch
+
+
+git push -u origin <branch>
+-- push local branch and create a remote branch
+
+git branch -D bugfix
+-- force delete a local branch
+
+git branch -d bugfix
+--delete a local branch
+
+git push origin --delete <branch_name>
+-- delete a remote branch
