@@ -1,6 +1,12 @@
 git checkout -b <branch_name>
   -- checkout and swtich to a new branch
 
+git reset --hard origin/master 
+-- discard local commits and revert to original state
+
+git stash ; git pull ; git stash pop
+-- update and merge local change
+
 git branch -u <remote_branch> 
 -- track remote branch
 
